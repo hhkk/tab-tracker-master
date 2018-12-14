@@ -1,5 +1,6 @@
 const path = require('path')
 
+// hbk server side port 8081 localhost:8081/songs
 module.exports = {
   port: process.env.PORT || 8081,
   db: {

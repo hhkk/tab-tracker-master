@@ -12,10 +12,11 @@ app.use(cors())
 
 require('./passport')
 
-require('./routes')(app)
+const hbk = require('./routes')
+hbk(app)
 
 sequelize.sync({force: false})
   .then(() => {
     app.listen(config.port)
-    console.log(`Server started on port ${config.port}`)
+    console.log('hbk2 Server started on port ${config.port}') // 8082
   })

@@ -16,6 +16,7 @@ var webpackConfig = (process.env.NODE_ENV === 'testing' || process.env.NODE_ENV 
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
+console.log('hbk:' + port); // 8080
 // automatically open browser, if not set will be false
 var autoOpenBrowser = !!config.dev.autoOpenBrowser
 // Define HTTP proxies to your custom API backend
@@ -77,7 +78,7 @@ devMiddleware.waitUntilValid(() => {
   console.log('> Listening at ' + uri + '\n')
   // when env is testing, don't need open it
   if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
-    opn(uri)
+    opn(uri)    // localhost:8080
   }
   _resolve()
 })
