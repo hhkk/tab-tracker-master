@@ -17,6 +17,7 @@ fs
     file !== 'index.js'
   )
   .forEach((file) => {
+    // console.log('hbk processing model:'+file)
     const model = sequelize.import(path.join(__dirname, file))
     db[model.name] = model
   })

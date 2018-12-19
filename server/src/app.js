@@ -19,4 +19,5 @@ sequelize.sync({force: false})
   .then(() => {
     app.listen(config.port)
     console.log('hbk2 Server started on port ${config.port}') // 8082
+    console.log('hbk3 Server started on port' + config.port) // 8081
   })
