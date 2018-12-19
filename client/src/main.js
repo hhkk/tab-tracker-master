@@ -1,8 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// note that app and apphbk imports are below see github dec 19 2018
 import Vue from 'vue'
-import App from './App'
-// import AppHbk from './AppHbk'
 import router from './router'
 import Vuetify from 'vuetify'
 import { sync } from 'vuex-router-sync'
@@ -21,19 +20,21 @@ Vue.component('panel', Panel)
 sync(store, router)
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  store,
-  template: '<App/>',
-  components: { App }
-})
-
-/* eslint-disable no-new */
+// import App from './App'
 // new Vue({
-//   el: '#appHbk', // or app
+//   el: '#app',
 //   router,
 //   store,
-//   template: '<AppHbk/>',
-//   components: { AppHbk }
+//   template: '<App/>',
+//   components: { App }
 // })
+
+/* eslint-disable no-new */
+import AppHbk from './AppHbk'
+new Vue({
+  el: '#appHbk', // or app
+  router,
+  store,
+  template: '<AppHbk/>',
+  components: { AppHbk }
+})
