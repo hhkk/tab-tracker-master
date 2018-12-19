@@ -20,9 +20,18 @@ Vue.component('panel', Panel)
 
 sync(store, router)
 
+// /* eslint-disable no-new */
+// new Vue({
+//   el: '#appHbk',
+//   router,
+//   store,
+//   template: '<AppHbk/>',
+//   components: { AppHbk }
+// })
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#appHbk',
+  el: '#appHbk', // or app
   router,
   store,
   template: '<AppHbk/>',
