@@ -3,7 +3,7 @@
     <v-app>
       <page-header />
       <main>
-        AppHbk2
+        AppHbk.vue
         <v-container fluid>
           <router-view></router-view>
         </v-container>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import PageHeader from '@/components/Header.vue'
+import PageHeader from '@/components/Header2.vue'
 
 export default {
   name: 'appHbk',

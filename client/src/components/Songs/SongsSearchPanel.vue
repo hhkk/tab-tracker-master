@@ -1,5 +1,6 @@
 <template>
-  <panel title="Search">
+  <panel title="SongsSearchPanel.vueHbk">
+    hbkx  {{ $store.state.isUserLoggedIn }}  {{ $store.state.counterhbkState }}  hbky
     <v-text-field
       label="Search by song title, artist, album, or genre"
       v-model="search"

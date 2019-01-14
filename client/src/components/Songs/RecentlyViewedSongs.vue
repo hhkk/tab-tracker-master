@@ -1,5 +1,5 @@
 <template>
-  <panel title="Recently Viewed Songs">
+  <panel title="RecentlyViewedSongs.vuehbk">
     <v-data-table
       :headers="headers"
       :pagination.sync="pagination"

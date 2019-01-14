@@ -20,14 +20,14 @@ Vue.component('panel', Panel)
 sync(store, router)
 
 /* eslint-disable no-new */
-// import App from './App'
-// new Vue({
-//   el: '#app',
-//   router,
-//   store,
-//   template: '<App/>',
-//   components: { App }
-// })
+import App from './App'
+new Vue({
+  el: '#app',
+  router,
+  store,
+  template: '<App/>',
+  components: { App }
+})
 
 /* eslint-disable no-new */
 import AppHbk from './AppHbk'

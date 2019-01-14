@@ -1,5 +1,5 @@
 <template>
-  <panel title="Songs">
+  <panel title="SongsPanel.vueHbk">
     <v-btn
       slot="action"
       :to="{
@@ -15,7 +15,7 @@
       <v-icon>add</v-icon>
     </v-btn>
 
-    <div 
+    <div
       v-for="song in songs"
       class="song"
       :key="song.id">
@@ -36,7 +36,7 @@
             dark
             class="cyan"
             :to="{
-              name: 'song', 
+              name: 'song',
               params: {
                 songId: song.id
               }

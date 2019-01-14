@@ -7,12 +7,13 @@
         :to="{
           name: 'songs'
         }">
-        header.vuehbk
+        header2.vuehbk
       </router-link>
     </v-toolbar-title>
+    {{"hbkHeader2.vue"}}
 
     <v-text-field
-      label="searchhbk"
+      label="searchhbk2 "
       v-model="searchhbk"
     ></v-text-field>
 
@@ -20,9 +21,8 @@
       flat
       dark
       @click="upcounterhbk">
-      upcou
+      BUTTON UPCOUNTERHBKXX BUTTON
     </v-btn>
-
 {{counterhbk}}
     <v-toolbar-items>
       <v-btn
@@ -38,7 +38,6 @@
     <v-spacer></v-spacer>
 
     <v-toolbar-items>
-
 
       <v-btn
         v-if="!$store.state.hbkstate"
@@ -97,7 +96,7 @@ export default {
     return {
       counterhbk: 2,
       counterhbk2: 6,
-      searchhbk: 'xhbk'
+      searchhbk: 'xhbkx'
     }
   },
   methods: {
@@ -113,13 +112,13 @@ export default {
       // this.$store.dispatch('setcounterhbkState')
 
       // works console.log('localStorage.vuex:' + localStorage.vuex)
-      // console.log('this.searchhbk:' + this.searchhbk)
-      // console.log('this.counterhbk:' + this.counterhbk)
+      console.log('this.searchhbk:' + this.searchhbk)
+      console.log('this.counterhbk:' + this.counterhbk)
       // console.log('this.$store.state.counterhbkState:' + this.$store.state.counterhbkState)
       // this.counterhbk = this.counterhbk + parseInt(this.searchhbk, 10)
-      // this.counterhbk = this.counterhbk + 1
+      this.counterhbk = this.counterhbk + 1
       // this.$store.state.counterhbkState = this.$store.state.counterhbkState + 1
-      // this.$store.dispatch('setcounterhbkState', 6)
+      this.$store.dispatch('setcounterhbkState', 6)
       // this.$store.mutations.setcounterhbkState()
       // this.counterhbkState++
     }

@@ -4,7 +4,7 @@
       <page-header />
 
       <main>
-        App2
+        App.vue
         <v-container fluid>
           <router-view></router-view>
         </v-container>

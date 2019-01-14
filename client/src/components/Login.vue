@@ -40,6 +40,7 @@ export default {
   methods: {
     async login () {
       try {
+        // this.$store.state.hbkstate = false  Do not mutate vuex store state outside mutation handlers
         const response = await AuthenticationService.login({
           email: this.email,
           password: this.password

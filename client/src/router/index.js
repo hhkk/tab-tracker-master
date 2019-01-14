@@ -9,6 +9,8 @@ import ViewSong from '@/components/ViewSong/Index'
 
 Vue.use(Router)
 
+console.log('in here hbk')
+
 export default new Router({
   routes: [
     {
