@@ -4,8 +4,10 @@ const SongsController = require('./controllers/SongsController')
 const BookmarksController = require('./controllers/BookmarksController')
 const HistoriesController = require('./controllers/HistoriesController')
 
-const isAuthenticated = require('./policies/isAuthenticated')
+// server server context
 
+const isAuthenticated = require('./policies/isAuthenticated')
+// hbkrouter
 module.exports = (app) => {
   app.post('/register',
     AuthenticationControllerPolicy.register,

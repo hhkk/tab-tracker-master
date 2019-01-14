@@ -1,5 +1,7 @@
 require('./check-versions')()
 
+// runs in the client server`
+
 var config = require('../config')
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
@@ -15,7 +17,7 @@ var webpackConfig = (process.env.NODE_ENV === 'testing' || process.env.NODE_ENV 
   : require('./webpack.dev.conf')
 
 // default port where dev server listens for incoming traffic
-var port = process.env.PORT || config.dev.port
+var port = process.env.PORT || config.dev.port  //  .../client/config/index.js
 console.log('hbk:' + port); // 8080
 // automatically open browser, if not set will be false
 var autoOpenBrowser = !!config.dev.autoOpenBrowser

@@ -7,7 +7,9 @@ import CreateSong from '@/components/CreateSong'
 import EditSong from '@/components/EditSong'
 import ViewSong from '@/components/ViewSong/Index'
 
-Vue.use(Router)
+// runs in the browser
+
+Vue.use(Router)    // hbkrouter
 
 console.log('in here hbk')
 

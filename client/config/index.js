@@ -1,6 +1,8 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
 
+// config's the client server
+
 // export const strict = false
 
 module.exports = {
