@@ -8,7 +8,7 @@
         ></v-text-field>
         <br>
         <v-text-field
-          label="Password"
+          label="Passwordhbk2"
           type="password"
           v-model="password"
         ></v-text-field>

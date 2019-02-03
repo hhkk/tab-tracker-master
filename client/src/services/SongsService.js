@@ -9,6 +9,7 @@ export default {
     })
   },
   show (songId) {
+    console.log('hbkjhjbjhbshow songId:' + songId)
     return Api().get(`songs/${songId}`)
   },
   post (song) {

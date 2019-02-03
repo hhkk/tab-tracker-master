@@ -11,11 +11,15 @@
           ></v-text-field>
           <br>
           <v-text-field
-            label="Password"
+            label="Passwordhbk"
             type="password"
             v-model="password"
             autocomplete="new-password"
           ></v-text-field>
+          <br>
+          1. It must contain ONLY the following characters: lower case, upper case, numerics.
+          <br>
+          2. It must be at least 8 characters in length and not greater than 32 characters in length.
         </form>
         <br>
         <div class="danger-alert" v-html="error" />
@@ -24,7 +28,7 @@
           dark
           class="cyan"
           @click="register">
-          Register
+          Registerhbk
         </v-btn>
       </panel>
     </v-flex>
