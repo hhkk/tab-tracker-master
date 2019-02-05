@@ -11,9 +11,9 @@
       <v-icon>window</v-icon> ibm
     </v-btn>
 
-    <v-bdtn icon href="/fooRoute" target="_blank">
+    <v-btn icon href="/fooRoute" target="_blank">
       <v-icon>window</v-icon> Link Text
-    </v-bdtn>
+    </v-btn>
   </panel>
 </template>
 
