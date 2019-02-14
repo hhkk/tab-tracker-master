@@ -22,7 +22,7 @@ Vue.component('panel', Panel)
 sync(store, router)
 
 /* eslint-disable no-new */
-import App from './App'
+import App from './App' // App.vue
 new Vue({
   el: '#app',
   router,
@@ -32,7 +32,7 @@ new Vue({
 })
 
 /* eslint-disable no-new */
-import AppHbk from './AppHbk'
+import AppHbk from './AppHbk'  // AppHbk.vue
 new Vue({
   el: '#appHbk', // or app
   router,

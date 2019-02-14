@@ -21,7 +21,7 @@
       flat
       dark
       @click="upcounterhbk">
-      BUTTON UPCOUNTERHBKXX BUTTON
+      BUTTON UPCOUNTERHBKXX BUTTON var:counterhbk
     </v-btn>
 {{counterhbk}}
     <v-toolbar-items>

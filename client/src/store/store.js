@@ -28,7 +28,7 @@ export default new Vuex.Store({
     setUser (state, user) {
       state.user = user
     },
-    setcounterhbkState (state, incrx) {
+    setcounterhbkState3 (state, incrx) {
       state.counterhbkState = state.counterhbkState + incrx
     }
   },
@@ -40,7 +40,7 @@ export default new Vuex.Store({
       commit('setUser', user)
     },
     setcounterhbkState ({commit}, incrx) {
-      commit('setcounterhbkState', incrx)
+      commit('setcounterhbkState3', incrx)
     }
   }
 })

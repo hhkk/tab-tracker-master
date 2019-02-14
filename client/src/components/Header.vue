@@ -10,6 +10,7 @@
         header.vuehbk
       </router-link>
     </v-toolbar-title>
+    {{"hbkHeader.vue"}}
 
     <v-text-field
       label="searchhbk"
