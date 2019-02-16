@@ -3,7 +3,7 @@
     <v-app>
       <page-header />
       <main>
-        AppHbk.vue
+        AppHbk.vue ============================
         <v-container fluid>
           <router-view></router-view>
         </v-container>
@@ -16,7 +16,7 @@
 import PageHeader from '@/components/Header2.vue'
 
 export default {
-  name: 'appHbk',
+  name: 'appHbk', // ============================
   components: {
     PageHeader
   }
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style>
-#appHbk {
+#appHbk { // ============================
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,5 +1,6 @@
 <template>
   <panel title="SongsPanel.vueHbk">
+
     <v-btn
       slot="action"
       :to="{

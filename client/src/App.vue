@@ -2,7 +2,6 @@
   <div id="app">
     <v-app>
       <page-header />
-
       <main>
         App.vue
         <v-container fluid>
