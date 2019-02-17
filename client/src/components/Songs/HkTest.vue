@@ -1,5 +1,5 @@
 <template>
-  <panel title="HkTest.vueHbk">
+  <panel title="HkTest.vueHbk copy from components/Songs/SongsSearchPanel.vue">
     HKTEST190204  {{ $store.state.isUserLoggedIn }}  {{ $store.state.counterhbkState }}  hbky
     <!--<a v-bind:href ="url">Link to Google</a>-->
     <!--<a href="www.google.com"> {{ google }} </a>-->

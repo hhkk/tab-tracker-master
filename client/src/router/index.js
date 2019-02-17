@@ -27,7 +27,7 @@ export default new Router({
       component: Login
     },
     {
-      path: '/songs',
+      path: '/songs', // seems to be http://localhost:8080/#/songs
       name: 'songs',
       component: Songs
     },

@@ -1,18 +1,19 @@
 <template>
   <v-layout>
+    <!-- left column -->
     <v-flex xs6 v-if="isUserLoggedIn">
       <songs-bookmarks />
       <recently-viewed-songs class="mt-2" />
       <hk-test class="mt-2" />
     </v-flex>
 
+    <!-- right column -->
     <v-flex :class="{
         xs12: !isUserLoggedIn,
         xs6: isUserLoggedIn
       }" class="ml-2">
       <songs-search-panel />
-
-<!-- maps to /client/src/components/Songs/UsToDo1.vue-->
+      <!-- maps to /client/src/components/Songs/UsToDo1.vue-->
       <us-to-do-1 class="mt-2" />
       <songs-panel class="mt-2" />
     </v-flex>

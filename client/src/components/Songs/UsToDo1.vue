@@ -1,6 +1,7 @@
 <template>
   <panel title="UsToDo1.vueHbk">
     987987987   xxxx
+    /components/Songs/UsToDo1.vue copy from /components/Songs/SongsPanel.vue
     <v-btn
       slot="action"
       :to="{
