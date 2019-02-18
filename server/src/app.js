@@ -5,7 +5,7 @@ const morgan = require('morgan')
 const {sequelize} = require('./models')
 const config = require('./config/config')
 
-const app = express()
+const app = express() // hbk express comes in top level =======================
 app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())

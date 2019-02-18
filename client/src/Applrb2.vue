@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="applrb3  ">
     <v-app>
       <page-header />
       <main>
@@ -16,7 +16,7 @@
 import PageHeader from '@/components/Header.vue'
 
 export default {
-  name: 'app',
+  name: 'applrb2',
   components: {
     PageHeader
   }

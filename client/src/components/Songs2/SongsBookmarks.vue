@@ -1,5 +1,5 @@
 <template>
-  <panel title="SongsBookmarks.vuehbk(2)">
+  <panel title="searchme: SongsBookmarks.vuehbk(2)">
     <v-data-table
       :headers="headers"
       :pagination.sync="pagination"

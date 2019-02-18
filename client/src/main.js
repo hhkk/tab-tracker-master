@@ -22,21 +22,21 @@ Vue.component('panel', Panel)
 sync(store, router)
 
 /* eslint-disable no-new */
-import App from './App' // this links to App.vue
+import Applrb3 from './Applrb2' // this links to Applrb2.vue
 new Vue({
-  el: '#app',
+  el: '#applrb3',
   router,
   store,
-  template: '<App/>',
-  components: { App }
+  template: '<Applrb3/>',
+  components: { Applrb3 }
 })
 
-/* eslint-disable no-new */
-import AppHbk from './AppHbk'  // this links to AppHbk.vue
-new Vue({
-  el: '#appHbk', // or app
-  router,
-  store,
-  template: '<AppHbk/>',
-  components: { AppHbk }
-})
+// /* eslint-disable no-new */
+// import AppHbk from './AppHbk'  // this links to AppHbk.vue
+// new Vue({
+//   el: '#appHbk', // or app
+//   router,
+//   store,
+//   template: '<AppHbk/>',
+//   components: { AppHbk }
+// })

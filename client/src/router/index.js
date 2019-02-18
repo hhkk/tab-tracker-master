@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+// The @ is just a nice alias for the /src directory that was setup in webpack by the Vue command line tool.
+// from https://scotch.io/tutorials/getting-started-with-vue-router
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Songs from '@/components/Songs/Index'
@@ -27,14 +29,14 @@ export default new Router({
       component: Login
     },
     {
-      path: '/songs', // seems to be http://localhost:8080/#/songs
+      path: '/songsy', // seems to be http://localhost:8080/#/songs hbkhbk
       name: 'songs',
-      component: Songs
+      component: Songs2
     },
     {
-      path: '/songs2',
-      name: 'songs2',
-      component: Songs2
+      path: '/songsx', // seems to be http://localhost:8080/#/songs hbkhbk
+      name: 'songs',
+      component: Songs
     },
     {
       path: '/songs/create',
@@ -53,7 +55,7 @@ export default new Router({
     },
     {
       path: '*',
-      redirect: 'songs'
+      redirect: '/songsx'
     }
   ]
 })
