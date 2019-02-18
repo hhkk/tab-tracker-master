@@ -27,8 +27,8 @@ new Vue({
   el: '#applrb3y', // target element in client/index.html and must match
   router,
   store,
-  template: '<Applrb3x1/>', // these 3 in this file must match
-  components: { Applrb3x1 } // these 3 in this file must match
+  template: '<Applrb3x1/>',
+  components: { Applrb3x1 } // these 3 in this file mu
 })
 
 // /* eslint-disable no-new */

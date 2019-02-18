@@ -17,7 +17,7 @@
             autocomplete="new-password"
           ></v-text-field>
           <br>
-          1. It must contain ONLY the following characters: lower case, upper case, numerics.
+          1. It must have EACH of these 3 - eg Himmmpy1: lower case, upper case, numerics.
           <br>
           2. It must be at least 8 characters in length and not greater than 32 characters in length.
         </form>
