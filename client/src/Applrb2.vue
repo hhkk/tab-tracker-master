@@ -1,5 +1,5 @@
 <template>
-  <div id="applrb3y">
+  <div id="Applrb2">
     <v-app>
       <page-header />
       <main>
