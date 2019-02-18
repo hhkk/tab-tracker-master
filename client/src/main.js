@@ -24,11 +24,11 @@ sync(store, router)
 /* eslint-disable no-new */
 import Applrb3x1 from './Applrb2' // this links to Applrb2.vue
 new Vue({
-  el: '#applrb3y',
+  el: '#applrb3y', // target element in client/index.html and must match
   router,
   store,
-  template: '<Applrb3x1/>',
-  components: { Applrb3x1 }
+  template: '<Applrb3x1/>', // these 3 in this file must match
+  components: { Applrb3x1 } // these 3 in this file must match
 })
 
 // /* eslint-disable no-new */
