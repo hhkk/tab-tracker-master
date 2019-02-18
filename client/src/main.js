@@ -22,13 +22,13 @@ Vue.component('panel', Panel)
 sync(store, router)
 
 /* eslint-disable no-new */
-import Applrb3 from './Applrb2' // this links to Applrb2.vue
+import Applrb3x from './Applrb2' // this links to Applrb2.vue
 new Vue({
-  el: '#applrb3',
+  el: '#applrb3y',
   router,
   store,
-  template: '<Applrb3/>',
-  components: { Applrb3 }
+  template: '<Applrb3x/>',
+  components: { Applrb3x }
 })
 
 // /* eslint-disable no-new */
