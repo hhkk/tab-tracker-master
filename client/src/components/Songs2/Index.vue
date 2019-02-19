@@ -1,19 +1,27 @@
 <template>
   <v-layout>
     <v-flex xs6 v-if="isUserLoggedIn">
-      <songs-bookmarks />
-      <recently-viewed-songs class="mt-2" />
-      <hk-test class="mt-2" />
+      1 <songs-bookmarks />
+      2 <recently-viewed-songs class="mt-2" />
+      3 <hk-test class="mt-2" />
+      4 <songs-search-panel />
     </v-flex>
 
     <v-flex :class="{
         xs12: !isUserLoggedIn,
         xs6: isUserLoggedIn
       }" class="ml-2">
-      <songs-search-panel />
 
-<!-- maps to /client/src/components/Songs/UsToDo1.vue-->
+      <!-- maps to /client/src/components/Songs/UsToDo1.vue-->
       <us-to-do-1 class="mt-2" />
+    </v-flex>
+
+    <v-flex :class="{
+        xs12: !isUserLoggedIn,
+        xs6: isUserLoggedIn
+      }" class="ml-2">
+
+      <!-- maps to /client/src/components/Songs/UsToDo1.vue-->
       <songs-panel class="mt-2" />
     </v-flex>
   </v-layout>

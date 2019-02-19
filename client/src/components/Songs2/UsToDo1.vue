@@ -1,5 +1,5 @@
 <template>
-  <panel title="UsToDo1.vueHbk">
+  <panel title="UsToDo1.vueHbk copied from SongsPanel.vue">
     987987987
     ustodo in ustodos in client/src/components/Songs2/UsToDo1.vue
     <v-btn
