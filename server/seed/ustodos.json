@@ -1,6 +1,6 @@
 [
   {
-    "title": "Float Onxss",
+    "ustodotitle": "ustodotitleFloat On",
     "artist": "Modest Mouse",
     "genre": "Alternative Rock",
     "album": "bla bla bla",
@@ -10,7 +10,7 @@
     "tab": ""
   },
   {
-    "title": "abc",
+    "ustodotitle": "ustodotitleabc",
     "artist": "123",
     "genre": "dfasdf",
     "album": "asdf",
@@ -20,7 +20,7 @@
     "tab": "asdf"
   },
   {
-    "title": "asdf",
+    "ustodotitle": "ustodotitleasdf",
     "artist": "asdf",
     "genre": "asdf",
     "album": null,
@@ -30,7 +30,7 @@
     "tab": "asdf"
   },
   {
-    "title": "zzzzzz2",
+    "ustodotitle": "ustodotitlezzzzzz",
     "artist": null,
     "genre": null,
     "album": null,
@@ -40,7 +40,7 @@
     "tab": null
   },
   {
-    "title": "asdf",
+    "ustodotitle": "ustodotitleasdf",
     "artist": "asdf",
     "genre": "asdf",
     "album": "asdf",
@@ -50,7 +50,7 @@
     "tab": "asdfasdf"
   },
   {
-    "title": "Float On!",
+    "ustodotitle": "ustodotitleFloat On!",
     "artist": "Modest Mouse",
     "genre": "Rock",
     "album": "Good News for People Who Love Bad News",

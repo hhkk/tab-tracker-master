@@ -1,11 +1,11 @@
 <template>
   <panel title="UsToDo1.vueHbk copied from SongsPanel.vue">
-    987987987
+    987987987a
     ustodo in ustodos in client/src/components/Songs2/UsToDo1.vue
     <v-btn
       slot="action"
       :to="{
-        name: 'songs-create'
+        name: 'ustodos-create'
       }"
       class="cyan accent-2"
       light
@@ -19,31 +19,34 @@
 
     <div
       v-for="ustodo in ustodos"
-      class="song5"
+      class="ustodo"
       :key="ustodo.id">
 
       <v-layout>
         <v-flex xs6>
-          <div class="song-title">
-            {{ustodo.title}}
+          <div class="ustodo-title">
+            ustodo.sstitle:{{ustodo.ustodotitle}}
           </div>
-          <div class="song-artist">
-            {{ustodo.artist}}
+          <div class="ustodo-artist">
+            ustodo.artist:{{ustodo.artist}}
           </div>
-          <div class="song-genre">
-            {{ustodo.genre}}
+          <div class="ustodo-genre">
+            ustodo.genre:{{ustodo.genre}}
+          </div>
+          <div class="ustodo-genre">
+            ustodo.id:{{ustodo.id}}
           </div>
 
           <v-btn
             dark
             class="cyan"
             :to="{
-              name: 'song',
+              name: 'ustodo',
               params: {
-                songId: ustodo.id
+                ustodoId: ustodo.id
               }
             }">
-            View
+            Viewx
           </v-btn>
         </v-flex>
 
@@ -76,21 +79,21 @@
 </script>
 
 <style scoped>
-  .song {
+  .ustodo {
     padding: 20px;
     height: 330px;
     overflow: hidden;
   }
 
-  .song-title {
+  .ustodo-title {
     font-size: 30px;
   }
 
-  .song-artist {
+  .ustodo-artist {
     font-size: 24px;
   }
 
-  .song-genre {
+  .ustodo-genre {
     font-size: 18px;
   }
 

@@ -1,6 +1,7 @@
 const {
   sequelize,
   Song,
+  UsToDo,
   User,
   Bookmark,
   History
@@ -8,6 +9,7 @@ const {
 
 const Promise = require('bluebird')
 const songs = require('./songs.json')
+const ustodos = require('./ustodos.json')
 const users = require('./users.json')
 const bookmarks = require('./bookmarks.json')
 const histories = require('./histories.json')
@@ -22,7 +24,14 @@ sequelize.sync({force: true})
 
     await Promise.all(
       songs.map(song => {
+        console.log('hbk creating song');
         Song.create(song)
+      })
+    )
+
+    await Promise.all(
+      ustodos.map(ustodo => {
+        UsToDo.create(ustodo)
       })
     )
 
