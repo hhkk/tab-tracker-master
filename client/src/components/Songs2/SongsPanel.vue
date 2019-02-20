@@ -32,6 +32,9 @@
           <div class="song-genre">
             {{song.genre}}
           </div>
+          <div class="song-genre">
+            song.id: {{song.id}}
+          </div>
 
           <v-btn
             dark

@@ -9,6 +9,7 @@ import Songs2 from '@/components/Songs2/Index'
 import CreateSong from '@/components/CreateSong'
 import EditSong from '@/components/EditSong'
 import ViewSong from '@/components/ViewSong/Index'
+import ViewUstodo from '@/components/ViewUstodo/Index'
 
 // runs in the browser
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/songs/:songId',
       name: 'song',
       component: ViewSong
+    },
+    {
+      path: '/ustodos/:ustodoId',
+      name: 'ustodo',
+      component: ViewUstodo
     },
     {
       path: '/songs/:songId/edit',

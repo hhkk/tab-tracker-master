@@ -39,7 +39,7 @@
 
           <v-btn
             dark
-            class="cyan"
+            class="blue"
             :to="{
               name: 'ustodo',
               params: {

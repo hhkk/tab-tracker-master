@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/../client/src/router/index.js" description="export default new Router({" line="18" />
+    <bookmark url="file://$PROJECT_DIR$/../client/src/router/index.js" description="export default new Router({" line="19" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ff1981-9408-4dd5-9d08-bcbc7a4ddc28" name="Default" comment="" />
@@ -382,12 +382,12 @@
       <workItem from="1550393884406" duration="1454000" />
       <workItem from="1550396362601" duration="953000" />
       <workItem from="1550450332619" duration="630000" />
-      <workItem from="1550539386989" duration="638000" />
+      <workItem from="1550539386989" duration="1840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68043000" />
+    <option name="totallyTimeSpent" value="69245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
