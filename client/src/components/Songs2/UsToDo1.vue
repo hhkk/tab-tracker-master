@@ -25,7 +25,7 @@
       <v-layout>
         <v-flex xs6>
           <div class="ustodo-title">
-            ustodo.sstitle:{{ustodo.ustodotitle}}
+            ustodo.ustodotitle:{{ustodo.ustodotitle}}
           </div>
           <div class="ustodo-artist">
             ustodo.artist:{{ustodo.artist}}

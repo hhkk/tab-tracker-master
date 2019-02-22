@@ -2,6 +2,7 @@ import Api from '@/services/Api'
 
 export default {
   index (search) {
+    console.log('hbk in /src/services/UsToDo1Service.js search [' + search + ']')
     return Api().get('ustodos', {
       params: {
         search: search

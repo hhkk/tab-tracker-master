@@ -41,7 +41,7 @@
                 songId: song.id
               }
             }">
-            View
+            ViewY
           </v-btn>
         </v-flex>
 
