@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex xs4>
-      <panel title="Song Metadata">
+      <panel title="Song Metadata in /components/EditSong.vue">
         <v-text-field
           label="Title"
           required

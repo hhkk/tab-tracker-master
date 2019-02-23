@@ -1,59 +1,59 @@
 <template>
   <v-layout>
     <v-flex xs4>
-      <panel title="Song Metadata in components/CreateSong.vue">
+      <panel title="Ustodo Metadata">
         <v-text-field
-          label="Title"
+          label="ustodotitle"
           required
           :rules="[required]"
-          v-model="song.title"
+          v-model="ustodo.ustodotitle"
         ></v-text-field>
 
         <v-text-field
           label="Artist"
           required
           :rules="[required]"
-          v-model="song.artist"
+          v-model="ustodo.artist"
         ></v-text-field>
 
         <v-text-field
           label="Genre"
           required
           :rules="[required]"
-          v-model="song.genre"
+          v-model="ustodo.genre"
         ></v-text-field>
 
         <v-text-field
           label="Album"
           required
           :rules="[required]"
-          v-model="song.album"
+          v-model="ustodo.album"
         ></v-text-field>
 
         <v-text-field
           label="Album Image Url"
           required
           :rules="[required]"
-          v-model="song.albumImageUrl"
+          v-model="ustodo.albumImageUrl"
         ></v-text-field>
 
         <v-text-field
           label="YouTube ID"
           required
           :rules="[required]"
-          v-model="song.youtubeId"
+          v-model="ustodo.youtubeId"
         ></v-text-field>
       </panel>
     </v-flex>
 
     <v-flex xs8>
-      <panel title="Song Structure" class="ml-2">
+      <panel title="Ustodo Structure" class="ml-2">
         <v-text-field
           label="Tab"
           multi-line
           required
           :rules="[required]"
-          v-model="song.tab"
+          v-model="ustodo.tab"
         ></v-text-field>
 
         <v-text-field
@@ -61,7 +61,7 @@
           multi-line
           required
           :rules="[required]"
-          v-model="song.lyrics"
+          v-model="ustodo.lyrics"
         ></v-text-field>
       </panel>
 
@@ -72,21 +72,21 @@
       <v-btn
         dark
         class="cyan"
-        @click="create">
-        Create Song
+        @click="save">
+        Save Ustodo
       </v-btn>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-import SongsService from '@/services/SongsService'
+import Ustodo1Service from '@/services/UsToDo1Service'
 
 export default {
   data () {
     return {
-      song: {
-        title: null,
+      ustodo: {
+        ustodotitle: null,
         artist: null,
         genre: null,
         album: null,
@@ -100,7 +100,7 @@ export default {
     }
   },
   methods: {
-    async create () {
+    async save () {
       this.error = null
       const areAllFieldsFilledIn = Object
         .keys(this.song)
@@ -110,14 +110,26 @@ export default {
         return
       }
 
+      const songId = this.$store.state.route.params.songId
       try {
-        await SongsService.post(this.song)
+        await Ustodo1Service.put(this.song)
         this.$router.push({
-          name: 'songs'
+          name: 'song',
+          params: {
+            songId: songId
+          }
         })
       } catch (err) {
         console.log(err)
       }
+    }
+  },
+  async mounted () {
+    try {
+      const ustodoId = this.$store.state.route.params.ustodoId
+      this.ustodo = (await Ustodo1Service.show(ustodoId)).data
+    } catch (err) {
+      console.log(err)
     }
   }
 }
@@ -125,4 +137,3 @@ export default {
 
 <style scoped>
 </style>
-

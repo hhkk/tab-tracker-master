@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex xs4>
-      <panel title="Song Metadata in components/CreateSong.vue">
+      <panel title="Ustodo Metadata">
         <v-text-field
           label="Title"
           required
@@ -47,7 +47,7 @@
     </v-flex>
 
     <v-flex xs8>
-      <panel title="Song Structure" class="ml-2">
+      <panel title="Ustodo Structure" class="ml-2">
         <v-text-field
           label="Tab"
           multi-line
@@ -73,14 +73,14 @@
         dark
         class="cyan"
         @click="create">
-        Create Song
+        Create Ustodo
       </v-btn>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-import SongsService from '@/services/SongsService'
+import UsToDo1Service from '@/services/UsToDo1Service'
 
 export default {
   data () {
@@ -103,17 +103,17 @@ export default {
     async create () {
       this.error = null
       const areAllFieldsFilledIn = Object
-        .keys(this.song)
-        .every(key => !!this.song[key])
+        .keys(this.ustodo)
+        .every(key => !!this.ustodo[key])
       if (!areAllFieldsFilledIn) {
         this.error = 'Please fill in all the required fields.'
         return
       }
 
       try {
-        await SongsService.post(this.song)
+        await UsToDo1Service.post(this.ustoso)
         this.$router.push({
-          name: 'songs'
+          name: 'ustodos'
         })
       } catch (err) {
         console.log(err)

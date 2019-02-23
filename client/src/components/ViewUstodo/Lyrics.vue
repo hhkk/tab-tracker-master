@@ -2,7 +2,7 @@
   <panel title="Lyrics">
     <textarea
       readonly
-      v-model="song.lyrics"
+      v-model="ustodo.lyrics"
     ></textarea>
   </panel>
 </template>
@@ -10,7 +10,7 @@
 <script>
 export default {
   props: [
-    'song'
+    'ustodo'
   ]
 }
 </script>

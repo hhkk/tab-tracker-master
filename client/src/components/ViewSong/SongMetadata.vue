@@ -1,5 +1,5 @@
 <template>
-  <panel title="Song Metadata">
+  <panel title="Song Metadata in ViewSong/SongMetadata.vue">
     <v-layout>
       <v-flex xs6>
         <div class="song-title">

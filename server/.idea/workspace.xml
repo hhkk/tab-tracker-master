@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/../client/src/router/index.js" description="export default new Router({" line="19" />
+    <bookmark url="file://$PROJECT_DIR$/../client/src/router/index.js" description="export default new Router({" line="21" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ff1981-9408-4dd5-9d08-bcbc7a4ddc28" name="Default" comment="" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
+            <state relative-caret-position="670">
               <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
             </state>
           </provider>
@@ -395,12 +395,12 @@
       <workItem from="1550393884406" duration="1454000" />
       <workItem from="1550396362601" duration="953000" />
       <workItem from="1550450332619" duration="630000" />
-      <workItem from="1550539386989" duration="3093000" />
+      <workItem from="1550539386989" duration="4128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70498000" />
+    <option name="totallyTimeSpent" value="71533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -919,7 +919,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
+        <state relative-caret-position="670">
           <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
         </state>
       </provider>

@@ -13,7 +13,7 @@
       }" class="ml-2">
 
       <!-- maps to /client/src/components/Songs/UsToDo1.vue-->
-      <us-to-do-1 class="mt-2" />
+      5 <us-to-do-1 class="mt-2" />
     </v-flex>
 
     <v-flex :class="{
@@ -22,7 +22,7 @@
       }" class="ml-2">
 
       <!-- maps to /client/src/components/Songs/UsToDo1.vue-->
-      <songs-panel class="mt-2" />
+      6 <songs-panel class="mt-2" />
     </v-flex>
   </v-layout>
 </template>

@@ -26,7 +26,6 @@ import SongsBookmarks from './SongsBookmarks'
 import RecentlyViewedSongs from './RecentlyViewedSongs'
 import SongsSearchPanel from './SongsSearchPanel'
 import HkTest from './HkTest'
-import UsToDo1 from './UsToDo1'
 import SongsService from '@/services/SongsService'
 import UsToDo1Service from '@/services/UsToDo1Service'
 import {mapState} from 'vuex'
@@ -37,8 +36,7 @@ export default {
     SongsSearchPanel,
     SongsBookmarks,
     RecentlyViewedSongs,
-    HkTest,
-    UsToDo1
+    HkTest
   },
   computed: {
     ...mapState([

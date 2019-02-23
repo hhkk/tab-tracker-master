@@ -7,7 +7,9 @@ import Login from '@/components/Login'
 import Songs from '@/components/Songs/Index'
 import Songs2 from '@/components/Songs2/Index'
 import CreateSong from '@/components/CreateSong'
+import CreateUstodo from '@/components/CreateUstodo'
 import EditSong from '@/components/EditSong'
+import EditUstodo from '@/components/EditUstodo'
 import ViewSong from '@/components/ViewSong/Index'
 import ViewUstodo from '@/components/ViewUstodo/Index'
 
@@ -36,13 +38,18 @@ export default new Router({
     },
     {
       path: '/songsx', // seems to be http://localhost:8080/#/songs hbkhbk
-      name: 'songs',
+      name: 'songsx',
       component: Songs
     },
     {
       path: '/songs/create',
       name: 'songs-create',
       component: CreateSong
+    },
+    {
+      path: '/ustodos/create',
+      name: 'ustodos-create',
+      component: CreateUstodo
     },
     {
       path: '/songs/:songId',
@@ -58,6 +65,11 @@ export default new Router({
       path: '/songs/:songId/edit',
       name: 'song-edit',
       component: EditSong
+    },
+    {
+      path: '/ustodos/:ustodoId/edit',
+      name: 'ustodo-edit',
+      component: EditUstodo
     },
     {
       path: '*',
