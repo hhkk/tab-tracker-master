@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex xs4>
-      <panel title="Ustodo Metadata">
+      <panel title="Ustodo Metadata 2">
         <v-text-field
           label="ustodotitle"
           required
@@ -21,6 +21,20 @@
           required
           :rules="[required]"
           v-model="ustodo.genre"
+        ></v-text-field>
+
+        <v-text-field
+          label="createdAt"
+          required
+          :rules="[required]"
+          v-model="ustodo.createdAt"
+        ></v-text-field>
+
+        <v-text-field
+          label="updatedAt"
+          required
+          :rules="[required]"
+          v-model="ustodo.updatedAt"
         ></v-text-field>
 
         <v-text-field
@@ -103,20 +117,20 @@ export default {
     async save () {
       this.error = null
       const areAllFieldsFilledIn = Object
-        .keys(this.song)
-        .every(key => !!this.song[key])
+        .keys(this.ustodo)
+        .every(key => !!this.ustodo[key])
       if (!areAllFieldsFilledIn) {
-        this.error = 'Please fill in all the required fields.'
+        this.error = 'Please fill in all the required ustodo fields.'
         return
       }
 
-      const songId = this.$store.state.route.params.songId
+      const ustodoId = this.$store.state.route.params.ustodoId
       try {
-        await Ustodo1Service.put(this.song)
+        await Ustodo1Service.put(this.ustodo)
         this.$router.push({
-          name: 'song',
+          name: 'ustodo',
           params: {
-            songId: songId
+            ustodoId: ustodoId
           }
         })
       } catch (err) {

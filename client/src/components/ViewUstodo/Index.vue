@@ -28,8 +28,8 @@ import Lyrics from './Lyrics'
 import Tab from './Tab'
 import UstodoMetadata from './UstodoMetadata'
 import YouTube from './YouTube'
-import SongsService from '@/services/SongsService'
-import SongHistoryService from '@/services/SongHistoryService'
+import UstodosService from '@/services/UstodosService'
+import UstodoHistoryService from '@/services/UstodoHistoryService'
 
 export default {
   data () {
@@ -46,10 +46,10 @@ export default {
   },
   async mounted () {
     const ustodoId = this.route.params.ustodoId
-    this.ustodo = (await SongsService.show(ustodoId)).data
+    this.ustodo = (await UstodosService.show(ustodoId)).data
 
     if (this.isUserLoggedIn) {
-      SongHistoryService.post({
+      UstodoHistoryService.post({
         ustodoId: ustodoId
       })
     }

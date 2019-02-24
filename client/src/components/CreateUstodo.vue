@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex xs4>
-      <panel title="Ustodo Metadata">
+      <panel title="Ustodo Metadata 1">
         <v-text-field
           label="Title"
           required

@@ -1,10 +1,11 @@
 <template>
-  <panel title="Ustodo Metadata">
+  <panel title="Ustodo Metadata 3">
     <v-layout>
       <v-flex xs6>
         <div class="ustodo-title">
           titlexy: {{ustodo.ustodotitle}}
         </div>
+
         <div class="ustodo-artist">
           {{ustodo.artist}}
         </div>
@@ -31,7 +32,7 @@
           dark
           class="cyan"
           @click="setAsBookmark">
-          Set As Bookmark
+          Set As Ustodo Bookmark
         </v-btn>
 
         <v-btn

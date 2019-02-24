@@ -50,4 +50,10 @@ module.exports = (app) => {
   app.post('/histories',
     isAuthenticated,
     HistoriesController.post)
+  app.get('/ustodohistories',
+    isAuthenticated,
+    HistoriesController.index)
+  app.post('/ustodohistories',
+    isAuthenticated,
+    HistoriesController.post)
 }
