@@ -59,7 +59,7 @@
 </template>
 
 <script>
-  import UsToDo1Service from '@/services/UsToDo1Service'
+  import UstodosService from '@/services/UstodosService'
 
   export default {
     data () {
@@ -71,7 +71,7 @@
       '$route.query.search': {
         immediate: true,
         async handler (value) {
-          this.ustodos = (await UsToDo1Service.index(value)).data
+          this.ustodos = (await UstodosService.index(value)).data
         }
       }
     }

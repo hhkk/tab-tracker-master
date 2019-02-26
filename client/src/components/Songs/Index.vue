@@ -27,7 +27,7 @@ import RecentlyViewedSongs from './RecentlyViewedSongs'
 import SongsSearchPanel from './SongsSearchPanel'
 import HkTest from './HkTest'
 import SongsService from '@/services/SongsService'
-import UsToDo1Service from '@/services/UsToDo1Service'
+import UstodosService from '@/services/UstodosService'
 import {mapState} from 'vuex'
 
 export default {
@@ -50,7 +50,7 @@ export default {
   },
   async mounted () {
     this.songs = (await SongsService.index()).data
-    this.songs = (await UsToDo1Service.index()).data
+    this.songs = (await UstodosService.index()).data
   }
 }
 </script>

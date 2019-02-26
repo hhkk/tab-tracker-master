@@ -2,20 +2,21 @@ import Api from '@/services/Api'
 
 export default {
   index (search) {
-    return Api().get('songs', {
+    console.log('hbk in /src/services/UsToDo1Service.js search [' + search + ']')
+    return Api().get('ustodos', {
       params: {
         search: search
       }
     })
   },
-  show (songId) {
-    console.log('hbkjhjbjhbshow songId:' + songId)
-    return Api().get(`songs/${songId}`)
+  show (ustodoId) {
+    console.log('hbkjhjbjhbshow ustodoId:' + ustodoId)
+    return Api().get(`ustodos/${ustodoId}`)
   },
-  post (song) {
-    return Api().post('songs', song)
+  post (ustodo) {
+    return Api().post('ustodos', ustodo)
   },
-  put (song) {
-    return Api().put(`songs/${song.id}`, song)
+  put (ustodo) {
+    return Api().put(`ustodos/${ustodo.id}`, ustodo)
   }
 }

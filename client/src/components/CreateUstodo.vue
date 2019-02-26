@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import UsToDo1Service from '@/services/UsToDo1Service'
+import UstodosService from '@/services/UstodosService'
 
 export default {
   data () {
@@ -111,7 +111,7 @@ export default {
       }
 
       try {
-        await UsToDo1Service.post(this.ustoso)
+        await UstodosService.post(this.ustoso)
         this.$router.push({
           name: 'ustodos'
         })

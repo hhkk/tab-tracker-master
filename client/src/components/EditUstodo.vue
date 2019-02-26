@@ -94,7 +94,7 @@
 </template>
 
 <script>
-import Ustodo1Service from '@/services/UsToDo1Service'
+import UstodosService from '@/services/UstodosService'
 
 export default {
   data () {
@@ -126,7 +126,7 @@ export default {
 
       const ustodoId = this.$store.state.route.params.ustodoId
       try {
-        await Ustodo1Service.put(this.ustodo)
+        await UstodosService.put(this.ustodo)
         this.$router.push({
           name: 'ustodo',
           params: {
@@ -141,7 +141,7 @@ export default {
   async mounted () {
     try {
       const ustodoId = this.$store.state.route.params.ustodoId
-      this.ustodo = (await Ustodo1Service.show(ustodoId)).data
+      this.ustodo = (await UstodosService.show(ustodoId)).data
     } catch (err) {
       console.log(err)
     }
