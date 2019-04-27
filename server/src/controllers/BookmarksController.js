@@ -38,6 +38,7 @@ module.exports = {
   },
   async post (req, res) {
     try {
+      console.log('hbk in bookmarks.post')
       const userId = req.user.id
       const {songId} = req.body
       const bookmark = await Bookmark.findOne({

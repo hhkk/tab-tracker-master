@@ -1,12 +1,12 @@
 <template>
-  <panel title="RecentlyViewedSongs.vuehbk">
+  <panel title="RecentlyViewedSongs.vuehbk2">
     <v-data-table
       :headers="headers"
       :pagination.sync="pagination"
       :items="histories">
       <template slot="items" scope="props">
         <td class="text-xs-right">
-          {{props.item.title}}
+          xx{{props.item.title}}
         </td>
         <td class="text-xs-right">
           {{props.item.artist}}
@@ -25,11 +25,11 @@ export default {
     return {
       headers: [
         {
-          text: 'Title',
+          text: 'Title1',
           value: 'title'
         },
         {
-          text: 'Artist',
+          text: 'Artist1',
           value: 'artist'
         }
       ],

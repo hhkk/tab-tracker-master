@@ -91,7 +91,7 @@ export default {
     }
   },
   methods: {
-    async setAsBookmark () {
+    async   setAsBookmark () {
       try {
         this.bookmark = (await BookmarksService.post({
           ustodoId: this.ustodo.id
