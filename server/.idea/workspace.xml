@@ -137,6 +137,7 @@
       <find>var error = new Error(message)</find>
       <find>you do hbk not have access to this resource</find>
       <find>hbk3</find>
+      <find>strororoorrootrrrrorroorrrrororroorroot</find>
     </findStrings>
     <replaceStrings>
       <replace>Ustodo</replace>
@@ -485,12 +486,12 @@
       <workItem from="1560083340513" duration="518000" />
       <workItem from="1560904019105" duration="599000" />
       <workItem from="1562551158805" duration="283000" />
-      <workItem from="1564241182260" duration="1667000" />
+      <workItem from="1564241182260" duration="2550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113333000" />
+    <option name="totallyTimeSpent" value="114216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
