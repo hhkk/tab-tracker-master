@@ -84,7 +84,7 @@
         flat
         dark
         @click="logout">
-        Log Out
+        Log Out2
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>

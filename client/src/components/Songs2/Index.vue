@@ -3,7 +3,7 @@
     <v-flex xs6 v-if="isUserLoggedIn">
       1 <songs-bookmarks />
       2 <recently-viewed-songs class="mt-2" />
-      3 <hk-test class="mt-2" />
+      <!--3 <hk-test class="mt-2" />-->
       4 <songs-search-panel />
     </v-flex>
 
@@ -13,7 +13,7 @@
       }" class="ml-2">
 
       <!-- maps to /client/src/components/Songs/UsToDo1.vue-->
-      5 <us-to-do-1 class="mt-2" />
+      <!--5 <us-to-do-1 class="mt-2" />-->
     </v-flex>
 
     <v-flex :class="{
