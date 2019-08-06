@@ -123,6 +123,17 @@ export default {
       // this.$store.dispatch('setcounterhbkState', 6)
       // this.$store.mutations.setcounterhbkState()
       // this.counterhbkState++
+      // works console.log('localStorage.vuex:' + localStorage.vuex)
+      console.log('this.searchhbk:' + this.searchhbk)
+      console.log('this.counterhbk:' + this.counterhbk)
+      // console.log('this.$store.state.counterhbkState:' + this.$store.state.counterhbkState)
+      // this.counterhbk = this.counterhbk + parseInt(this.searchhbk, 10)
+      this.counterhbk = this.counterhbk + 1 //hi mom
+      // this.$store.state.counterhbkState = this.$store.state.counterhbkState + 1
+      this.$store.dispatch('setcounterhbkState', 6)
+      // this.$store.mutations.setcounterhbkState()
+      // this.counterhbkState++
+      // this.counterhbkState++
     }
   }
 }
